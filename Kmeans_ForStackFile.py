@@ -59,6 +59,7 @@ file_withoutHeader=file.filter(lambda row: row.find('reputation')!=0)
 # CHANGE COMMENTed lines LINE TO TAKE ONLY A SUPSET OF POINTS:+++++++++++++++++++++++++++++++++++++++++++
 rdd_file=file_withoutHeader.map(lambda row:  parsePoint_fromString(row) ).cache()
 #rdd_part=file.sample(False, 0.00003, 0)
+#file_withoutHeader=file.filter(lambda row: row.find('reputation')!=0)
 #rdd_file=rdd_part.map(lambda row: parsePoint_fromString(row) )
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 count_points=rdd_file.count()
