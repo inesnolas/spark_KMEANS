@@ -61,24 +61,7 @@ rdd_file=file.map(lambda row:  parsePoint_fromString(row) ).cache()
 #rdd_part=file.sample(False, 0.00003, 0)
 #rdd_file=rdd_part.map(lambda row: parsePoint_fromString(row) )
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-#select numebr of points:
-
-#select subset of Features:
-
-
-
-
-
-
-
-
-
 count_points=rdd_file.count()
-
-
-
-
 
 
 #TODO!!!!!!!!!!!!#Choosing number of clusters
